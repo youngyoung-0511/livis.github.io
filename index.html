@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介紹網站</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p {
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">自我介紹</a></li>
+            <li><a href="page2.html">喜歡的東西</a></li>
+            <li><a href="page3.html">更多內容</a></li>
+        </ul>
+    </nav>
+    <div class="tree">
+        <div class="branch" id="introduction">
+            <h1>自我介紹</h1>
+            <div class="sub-branches">
+                <div class="sub-branch" onclick="showDetail('背景', '小時候很常玩電腦，並且好奇其背後的原理。<br>一直到國中填志願前不久，剛好看到 ⌈ 虎科大-資工科 ⌋。 <br>離家又很近，所以就來了。')">
+                    <h2>背景</h2>
+                    <p>為何來讀虎科?</p>
+                </div>
+                <div class="sub-branch" onclick="showDetail('基本訊息', '學號：51115107<br>姓名：丁政佑<br>性別：boy')">
+                    <h2>基本資料</h2>
+                    <p>點擊以查看詳細資料</p>
+                </div>
+                <div class="sub-branch" onclick="showDetail('興趣', '基本上甚麼東西都會想看看。試過才知道喜不喜歡。')">
+                    <h2>興趣</h2>
+                    <p>🥝...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模態框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h1 id="modal-title"></h1>
+            <p id="modal-detail"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

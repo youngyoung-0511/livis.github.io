@@ -1,0 +1,147 @@
+/* 設置 body 元素的樣式 */
+body {
+    background-color: cornflowerblue;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+/* 設置導覽欄的樣式 */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #48cbef; /* 導覽欄的顏色 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar li {
+    margin: 20px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #0055ff;
+    color: #fff;
+}
+
+/* 設置樹狀圖的樣式 */
+.tree {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 200px; /* 增加右側空間給導覽欄 */
+}
+
+.branch {
+    margin: 120px auto; /* 上下邊距為 120px，左右自動調整使其居中 */
+    text-align: center;
+}
+
+.sub-branches {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* 設置分支元素的樣式，並新增交錯的漸層顏色 */
+.sub-branch {
+    margin: 0 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ffcc33, #ff66cc);
+}
+
+.sub-branch:nth-child(2) {
+    background: linear-gradient(135deg, #66ccff, #3366ff);
+}
+
+.sub-branch:nth-child(3) {
+    background: linear-gradient(135deg, #99ff99, #33cc33);
+}
+
+.sub-branch:nth-child(4) {
+    background: linear-gradient(135deg, #ff9966, #ff3333);
+}
+
+.sub-branch:nth-child(5) {
+    background: linear-gradient(135deg, #ffccff, #cc33ff);
+}
+
+.sub-branch:nth-child(6) {
+    background: linear-gradient(135deg, #ffff66, #ffcc00);
+}
+
+.sub-branch:hover {
+    transform: scale(1.05);
+}
+
+.sub-branch h3 {
+    margin-top: 0;
+}
+
+.sub-branch p {
+    margin: 10px 0 0;
+}
+
+/* 設置模態框的樣式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

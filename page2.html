@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介紹網站 - 喜歡的東西</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        p {
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">自我介紹</a></li>
+            <li><a href="page2.html">喜歡的東西</a></li>
+            <li><a href="page3.html">更多內容</a></li>
+        </ul>
+    </nav>
+    <div class="branch" id="favorites">
+        <h1>喜歡的東西</h1>
+        <div class="sub-branches">
+            <div class="sub-branch" onclick="showDetail('音樂', 
+            '我喜歡的音樂相當多，但是最近最常聽的是這首 <a href=\'https://www.youtube.com/watch?v=N5HxbW_OcJI\' target=\'_blank\'>夢と葉桜</a> // Yume To Hazekura。<br>' +
+            '但由於有些技術問題 當影片插入的時候會顯示 <無法撥放影片>。<br>' +
+            '所以放成撥放清單中最新的一首。<br><br>' +
+            '<iframe width=\'560\' height=\'315\' src=\'https://www.youtube.com/embed/FNuGB562C2Q?si=Wu0X41iRYM2G-JOJ\' title=\'YouTube video player\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' referrerpolicy=\'strict-origin-when-cross-origin\' allowfullscreen></iframe>')">
+                <h2>音樂</h2>
+                <p>🍁🍁🍁...</p>
+            </div>
+            <div class="sub-branch" onclick="showDetail('書籍', 
+            '出名的作者與書籍有很多，像是哈利波特、冰與火之歌、魔戒。<br><br>' +
+            '這些書籍都非常有名，但是相信大家——除了知道哈利波特的作者是JK羅琳之外，其他都不知道。<br><br>' +
+            '而我喜歡的書與作者當然也有很多，但要說我最喜歡的書，那肯定是金庸寫的書。<br><br>' +
+            '<h4>金庸的書之風格特色 :</h4>' +
+            '<b>歷史背景與虛構情節相結合</b>  (架空歷史的寫作手法)。<br>' +
+            '<b>複雜的人物關係和性格</b>  (使故事變得更立體)。<br>' +
+            '<b>精湛的敘事技巧</b> (文筆夠好)。<br><br>')">
+                <h2>書籍</h2>
+                <p>🧊🧊🧊...</p>
+            </div>
+            <div class="sub-branch" onclick="showDetail('遊戲',
+            '最近蠻喜歡一款名為<b> <a href=\'https://darkanddarker.com/\' target=\'_blank\'> Dark and Darker </a></b>的遊戲。<br>' +
+            '是一種主打在地下城裡探險獲取各種裝備，並且會遭遇玩家與boss襲擊。<br>' +
+            '殺掉玩家可以獲得所有玩家辛苦得到的物品，但被殺掉也會爆全裝。是一種硬核的遊戲。<br>' +
+            '目前在<a href=\'https://store.steampowered.com/app/2016590/Dark_and_Darker/\' target=\'_blank\'> Steam </a>及<a href=\'https://darkanddarker.com/\' target=\'_blank\'> 官網 </a>上開放免費下載。')">
+                <h2>遊戲</h2>
+                <p>🌼🌼🌼...</p>
+            </div>
+            <div class="sub-branch" onclick="showDetail('運動', 
+            '一直以來都沒有特別喜歡甚麼運動，但自從世界盃足球賽以後<br>' +
+            '就都會關注一些足球聯賽像是: <a href=\'https://www.premierleague.com/\'>英格蘭超級足球聯賽</a>。<br>' +
+            '看久了，就會對足球產生一點興趣。')">
+                <h2>運動</h2>
+                <p>⚽⚽⚽...</p>
+            </div>
+            <div class="sub-branch" onclick="showDetail('棋類', 
+            '有時候沒事會玩一些棋類相關遊戲，像是: <a href=\'https://www.chess.com/home\'>西洋棋Chess</a>、五子棋、圍棋。')">
+                <h2>棋類</h2>
+                <p>♟️♟️♟️...</p>
+            </div>
+            <div class="sub-branch" onclick="showDetail('詩詞', 
+            '蘇軾所寫的《定風波》:<br><br>' +
+            '<b>莫聽穿林打葉聲，何妨吟嘯且徐行。</b><br>' +
+            '<p>不要去聽那風穿林打葉的聲音，何妨一邊吟詩一邊悠然前行。</p><br>' +
+            '<b>竹杖芒鞋輕勝馬，誰怕？一蓑煙雨任平生。</b><br>' +
+            '<p>竹杖和草鞋比騎馬還輕便，誰怕風雨？披著蓑衣在煙雨中照樣過一生。</p><br>' +
+            '<b>料峭春風吹酒醒，微冷，山頭斜照卻相迎。</b><br>' +
+            '<p>早春的寒風把我從醉酒中吹醒，有些微寒，山頭的斜陽正迎接著我。</p><br>' +
+            '<b>回首向來蕭瑟處，歸去，也無風雨也無晴。</b><br>' +
+            '<p>回首望向過去的蕭瑟處，回去吧，既無風雨也無晴。</p>')">
+                <h2>喜歡的詩詞</h2>
+                <p>✨✨✨...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模態框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h1 id="modal-title"></h1>
+            <p id="modal-detail"></p>
+        </div>
+    </div>
+
+    <script>
+        function showDetail(title, detail) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-detail').innerHTML = detail;
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
